@@ -1,0 +1,6 @@
+DATE                             NAME                                 Mobile_No.                      E-mail                                 AMOUNT
+
+Nov 22 2019                      Divas kumar                         7277101828                      bhadani.divas@gmail.com                 2625.00
+Dec  9 2019                      Manish Kumar                        9773807562                      manish@gmail.com                        195.00
+Dec 10 2019                      Anshu kumar                        8862931513                       Anshul123@gmail.com                     40625.00
+Dec 11 2019                      Divas kumar                        7277101828                      bhadani.divas@gmail.com                        20260.00

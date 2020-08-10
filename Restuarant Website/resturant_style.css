@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family:algerian;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#main{
+	width: 100%;
+	height: 340vh;
+	background-image: url(4.jpg);
+	background-size: cover;
+	background-repeat:repeat-x;
+}
+.bran{
+	text-align:center;
+	font-size: 25px;
+	color: green;"
+}
+nav{
+	width: 100%;
+	height: 80px;
+	background-color: #0006;
+	line-height: 80px;
+}
+
+nav ul{
+	float: right;
+	margin-right: 30px;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	transition: 0.8s all;
+}
+
+nav ul li:hover{
+	background-color: #f39d1a;	
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 30px;
+}

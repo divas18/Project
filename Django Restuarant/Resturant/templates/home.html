@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <style>
+    marquee
+    {
+        outline: red solid 2px;
+        font-family: comic Sans Ms;
+        border: 2px solid white;
+        background-color: white;
+        opacity: 50%;
+        margin-top: 440px;
+        text-align: center;
+        font-size: 50px;
+        -webkit-text-stroke: 2px cyan;
+        color: black;
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>♨ Food Mania ♨</title>
+     {% load static %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div id="main">
+    <nav>
+    <a href="{% url 'home' %}"><img src="{% static 'images/Logo.png' %}" align="
+      top" width="140" height="115"></a>
+      <ul>
+        <li> <a href="{% url 'home' %}">HOME</a></li>
+        <li><a href="{% url 'profile' %}">PROFILE</a></li>
+        <li><a href="{% url 'restaurant' %}">RESTURANT</a></li>
+        <li><a href="{% url 'login' %}">RESERVATIONS</a></li>
+        <li><a href="{% url 'contact_us' %}">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <marquee scrollamount="15">
+    ❇ Ꮥatisfying ₱eople’s ℌunger ℱor ₤ife’s Šimple թleasures ❇ 
+    </marquee>
+    <a href="https://www.youtube.com/" target="_blank"><img class="foot" src="{% static 'images/you.png' %}"></img></a>
+    <a href="https://www.instagram.com/" target="_blank"><img class="foot" src="{% static 'images/insta.png' %}"></img></a>
+    <a href="https://chat.whatsapp.com/BYZFB7Twm297hFAeJuJH8p" target="_blank"><img class="foot" src="{% static 'images/whats.png' %}"></img></a>
+</div>
+
+</body>
+
+</html>

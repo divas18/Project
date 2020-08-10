@@ -1,0 +1,50 @@
+{% load static %}
+*{
+	margin: 0;
+	padding: 0;
+	font-family:algerian;
+}
+
+#main{
+	width: 100%;
+	height: 100vh;
+	background-image: url("/static/images/my_rest.gif");
+	background-size: cover;
+}
+.foot{
+	width: 35px;
+	height: 35px;
+	float:right;
+	margin-right: 5px;
+}
+.foot:hover{
+	-webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+nav{
+	width: 100%;
+	height: 80px;
+	background-color: #0006;
+	line-height: 80px;
+}
+
+nav ul{
+	float: right;
+	margin-right: 30px;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	transition: 0.8s all;
+}
+
+nav ul li:hover{
+	background-color: #f39d1a;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 30px;
+}

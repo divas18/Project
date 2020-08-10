@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="contact_us.css">
+</head>
+<body>
+<div id="main">
+    <nav>
+    <a href="home.html"><img src="Logo.png" align="
+      top" width="140" height="115"></a>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="resturant.html">RESTURANT</a></li>
+        <li><a href="loginp.html">RESERVATIONS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <h1 style="color: orange; text-align: center;"><br><u>Contact Us</u></h1>
+    <br>
+    <form class="contact-form" required="" action="contact_fun.php" method="post">
+    <input type="text" required="" class="contact-form-text"  placeholder="Your name" name="name">
+    <input type="text" required="" class="contact-form-text"  placeholder="Your email" name="email">
+    <input type="text" required="" class="contact-form-text" placeholder="Contact Number" name="cnumber">
+    <textarea required="" class="contact-form-text" placeholder="Your message" name="message"></textarea>
+    <input type="submit" required="" class="contact-form-btn" value="Send">
+  </form>
+</div>
+</body>
+
+</html>

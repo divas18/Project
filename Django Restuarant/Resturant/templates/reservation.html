@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>♨Food Mania♨</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/reservation.css' %}">
+</head>
+<body>
+<div id="main">
+    <nav>
+    <a href="{% url 'home' %}"><img src="{% static 'images/Logo.png' %}" align="top" width="140" height="115"></a>
+      <ul>
+        <li> <a href="{% url 'home' %}">HOME</a></li>
+        <li><a href="{% url 'profile' %}">PROFILE</a></li>
+        <li><a href="{% url 'restaurant' %}">RESTURANT</a></li>
+        <li><a href="{% url 'login' %}">RESERVATIONS</a></li>
+        <li><a href="{% url 'contact_us' %}">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <br><br><br>
+    <form style="color: orange; font-size: 25px;" required="" action="/" method="post">
+        {% csrf_token %}
+    <fieldset style="margin-left: 80px; margin-right: 350px ">
+    <legend style="color:red; text-align:left; margin-left:40px;">PERSONAL INFORMATION</legend>
+    <br>
+    <input list="browsers" name="res" required="" class="bxx" placeholder="Title" >
+    <datalist id="browsers">
+    <option value="Mr." >
+    <option value="Mrs.">
+    <option value="Miss.">
+    </datalist>
+    <br>
+    <input type="text" required="" class="bxx" placeholder="First_name" name="fname">
+    <br>
+    <input type="text" required="" class="bxx" placeholder="Last Name" name="lname">
+    <br>
+    <input type="email" required="" class="bxx" placeholder="E-mail" name="email">
+    <br>
+    <input type="text" required="" class="bxx" placeholder="Country" name="country">
+    <br>
+    <input type="text" required="" class="bxx" placeholder="Contact Number" name="mbl">
+  </fieldset>
+  <br><br>
+  <fieldset style="margin-left: 80px; margin-right: 350px">
+    <legend style="color:red; text-align:left; margin-left:40px;">RESERVATION INFORMATION</legend>
+    <br>
+    <input list="browser" required="" class="bxx" placeholder="Type of Table" name="tab">
+    <datalist id="browser">
+    <option value="Table for 2">
+    <option value="Table for 4">
+    <option value="Table for more">
+    </datalist>
+    <br>
+    <input list="browser1" required="" class="bxx" placeholder="Purpose" name="purpose">
+    <datalist id="browser1">
+    <option value="Meating">
+    <option value="Casual">
+    <option value="Celebration">
+    </datalist>
+    <br>
+    <input list="browser2" required="" class="bxx" placeholder="Meal Plan" name="meal">
+    <datalist id="browser2">
+    <option value="Vegeterian">
+    <option value="Non-Vegeterian">
+    <option value="Both">
+    </datalist>
+    <br>
+    <input type="time" required="" class="bxx" placeholder="Time" name="time">
+    <br>
+    <input type="date" required="" class="bxx" placeholder="Date" name="date">
+  </fieldset>
+  <input type="submit" required="" class="bxx_send" value="Send">
+</form>
+</div>
+
+</body>
+
+</html>

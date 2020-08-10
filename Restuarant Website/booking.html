@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>♨Food Mania♨</title>
+  <link rel="stylesheet" type="text/css" href="reservation.css">
+</head>
+<body>
+<div id="main">
+    <nav>
+    <a href="home.html"><img src="Logo.png" align="
+      top" width="140" height="115"></a>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="profile.html">PROFILE</a></li>
+        <li><a href="resturant.html">RESTURANT</a></li>
+        <li><a href="loginp.html">RESERVATIONS</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <br><br><br>
+    <form style="color: orange; font-size: 25px;" action="booking_fun.php" method="POST">
+  <fieldset style="margin-left: 80px; margin-right: 350px">
+    <legend style="color:red; text-align:left; margin-left:40px;">RESERVATION INFORMATION</legend>
+    <br>
+    <input name="tab"  list="browser" class="bxx" placeholder="Type of Table">
+    <datalist id="browser">
+    <option value="Table for 2">
+    <option value="Table for 4">
+    <option value="Table for more">
+    </datalist>
+    <br>
+    <input name="purpose" list="browser1" class="bxx" placeholder="Purpose">
+    <datalist  id="browser1">
+    <option value="Meating">
+    <option value="Casual">
+    <option value="Celebration">
+    </datalist>
+    <br>
+    <input  name="meal" list="browser2" class="bxx" placeholder="Meal Plan">
+    <datalist id="browser2">
+    <option value="Vegeterian">
+    <option value="Non-Vegeterian">
+    <option value="Both">
+    </datalist>
+    <br>
+    <input name="time" type="time" class="bxx"placeholder="Time">
+    <br>
+    <input name="date" type="date" class="bxx" placeholder="Date">
+  </fieldset>
+  <input type="submit" class="bxx_send" value="Send">
+</form>
+</body>
+</div>
+</html>

@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>♨Food Mania♨</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style_profile.css' %}">
+</head>
+<body>
+<div id="main">
+    <nav>
+    <a href="{% url 'home' %}"><img src="{% static 'images/Logo.png' %}" align="
+      top" width="140" height="115"></a>
+      <ul>
+        <li> <a href="{% url 'home' %}">HOME</a></li>
+        <li><a href="{% url 'profile' %}">PROFILE</a></li>
+        <li><a href="{% url 'restaurant' %}">RESTURANT</a></li>
+        <li><a href="{% url 'login' %}">RESERVATIONS</a></li>
+        <li><a href="{% url 'contact_us' %}">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <br><br>
+    <h1 style="border-bottom-style: dotted; border-bottom-color: orange; float: left; margin: 30px;color: red">ᎯᗽǾᙀ† ԱᏕ</h1>
+    <br><br><br><br><br>
+    <p class="word"><b>FOOD MAINA CONFECTIONARY AND FOOD PRODUCTS</b> was incorporated from last 30 years. It is a firm of four partner. It is situated at Gaya in Bihar. Shree Vinod Prasad Bhadani is M.D of the company under whose leadership, we have been scaling new heights in the market. We are dealing in three categories of food products like Sweets, Namkeen and Snacks.
+    <br>
+    <p class="word"><b>Resources</b> We are well equipped with all kinds of resources for successfully meeting the increasing demands of the products like Sweets, Namkeens and Snacks. Moreover, our team of professionals is well versed with the production, thus assure the development of highly nutritious and tasty products.</p>
+
+    <p class="word"><b>Quality Assurance</b><br>
+    Our products are accessible with an assurance of high quality and standard. We take every care for the hygienic processing of the Namkeen, Snacks and Sweets. The best quality natural ingredients are used in their productions.</p>
+
+    <p class="word"><b>Network</b>
+    We are a leading company in food and products in Bihar and Jharkhand. We would like to carry forward our business in all over India. We need distributers, who can carry forward our business in all state of India.</p>
+</div>
+</body>
+
+</html>
